@@ -6,7 +6,7 @@
 /*   By: jprunel <jprunel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 16:08:19 by jprunel           #+#    #+#             */
-/*   Updated: 2019/02/27 17:38:03 by jprunel          ###   ########.fr       */
+/*   Updated: 2019/02/27 17:41:25 by jprunel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,21 +48,11 @@ int	get_next_line(const int fd, char **line)
 		storage = ft_strcpy(storage, storage + check_lb(storage));
 		return (1);
 	}
-	if ((status = read(fd, tmp, BUFF_SIZE)) < 0) // create macro
+	if ((status = read(fd, tmp, BUFF_SIZE)) < 0)
 		return (-1);
-	/*if (status == 0)
-	{
-		if (storage && storage[0])
-		{
-			*line = ft_strcpy(tmp, storage);
-			ft_strdel(&storage);
-			return (1);
-		}
-		return (0);
-	}*/
 	if (status == 0)
-		return(nothing_more(&tmp, &storage, &line));
-	storage = ft_strjoin(storage, tmp); // merge with a new fonction the strdel.
+		return (nothing_more(&tmp, &storage, &line));
+	storage = ft_strjoin(storage, tmp);
 	ft_strdel(&tmp);
 	return ((get_next_line(fd, line)) ? 1 : 0);
 }
