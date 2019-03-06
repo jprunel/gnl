@@ -6,14 +6,14 @@
 /*   By: jprunel <jprunel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/15 17:21:56 by jprunel           #+#    #+#             */
-/*   Updated: 2019/02/27 16:58:24 by jprunel          ###   ########.fr       */
+/*   Updated: 2019/03/06 13:22:27 by jprunel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# define BUFF_SIZE 50
+# define BUFF_SIZE 12
 # include "./libft/libft.h"
 
 # define MALLCHECK(x) if (!x) return (-1);
