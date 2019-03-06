@@ -1,0 +1,30 @@
+
+>>> One output per word, number = word size
+
+-------------
+
+>>> Words printing
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+*********START***********
+
+String: 0 0 0 0 0 0 0 0 0
+Separator: >>   <<
+Number of words: 9
+1
+1
+1
+1
+1
+1
+1
+1
+1
